@@ -14,3 +14,10 @@ const addNumb=(numb1:number,numb2:number)=>{
 }
 const res=addNumb(1,3);
 console.log(res) ;
+
+//Void function
+//void function do not return any value
+function getName(name:string):void{
+    console.log(`Hi I'm ${name}`);
+}
+getName('Kavinda');
