@@ -1,6 +1,5 @@
 //Way to create new name for an existing type
-
-
+// ----------------Type----------------
 //type varName={name:string;age:number;}
 type person={
     name:string;
@@ -12,6 +11,9 @@ const Person1:person={
     age:16,
 };
 console.log(`Hello I'm ${Person1.name}. I'm ${Person1.age} years old`);
+
+
+// ----------------Optional in type----------------
 
 //we can make certain property "optional" in an object type by adding question mark (?)
 type Student={
@@ -35,6 +37,8 @@ const mahinda:Student={
 }
 console.log("Mahinda :",mahinda,"\n","Nimal :",nimal );
 
+// ----------------Readonly in type----------------
+
 //we can make certain property "Read only" in an Object type by adding "readonly"
 
 type Teacher={
@@ -51,3 +55,31 @@ const Namal:Teacher={
     NIC:'990891559V'
 }
 console.log("NAMAL :",Namal); //we cannot change value of NIC 
+
+// ----------------Intersection in Type----------------
+
+//intersection type is the way to combine multiple types into single type by using '&' symbol
+
+type Person={
+    name:string;
+    age:number
+}
+type Employee={
+    employeeType:string;
+    employeeSalary:number;
+}
+
+type Engineer=Person&Employee;
+
+const Sirisena:Engineer={
+    name:'Nimal Sirisena',
+    age:46,
+    employeeType:'Civil Engineer',
+    employeeSalary:130000
+}
+
+console.log(Sirisena);
+
+// ----------------Intersection in Type----------------
+
+

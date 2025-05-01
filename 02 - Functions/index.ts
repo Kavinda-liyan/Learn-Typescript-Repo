@@ -21,3 +21,7 @@ function getName(name:string):void{
     console.log(`Hi I'm ${name}`);
 }
 getName('Kavinda');
+
+const setName=(name:string):void=>{
+       console.log(name) 
+};
